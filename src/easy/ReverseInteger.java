@@ -1,3 +1,5 @@
+package easy;
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -8,7 +10,7 @@ import java.lang.Math;
  */
 public class ReverseInteger {
     public int reverse0(int x) {
-        //鏈�鍚庝竴閬撻
+        //??后一道题
         long res = 0;
         while (x != 0) {
             res = res * 10 + x % 10;

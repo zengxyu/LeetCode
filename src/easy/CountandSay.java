@@ -1,3 +1,5 @@
+package easy;
+
 /**
  * Program: LeetCode
  * Description: The count-and-say sequence is the sequence of integers with the first five terms as following:

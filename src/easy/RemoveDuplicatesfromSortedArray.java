@@ -1,3 +1,5 @@
+package easy;
+
 /**
  * Program: LeetCode
  * Description: Given a sorted array nums, remove the duplicates in-place such that each element appear only once and return the new length.  Do not allocate extra space for another array, you must do this by modifying the input array in-place with O(1) extra memory.
@@ -19,7 +21,7 @@ public class RemoveDuplicatesfromSortedArray {
         }
         int save = 0;
         for (int i = 0; i < count - 1; i++) {
-            //如果num[i+1] <= num[i+1], 说明后面那个数不符合规则，需要替换掉，怎么替换呢? 从num[i+1]往后找一个比num[i]大的数来替换
+            //如果num[i+1] <= num[i+1], 说明后面那个数不符合规则，需要替换掉，�?�么替换�?? 从num[i+1]�?后找�?个比num[i]大的数来替换
             if (nums[i + 1] <= nums[i]) {
                 for (int j = save + 1; j < nums.length; j++) {
                     if (nums[j] > nums[i]) {

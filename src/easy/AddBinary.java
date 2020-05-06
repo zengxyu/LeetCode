@@ -1,3 +1,5 @@
+package easy;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -7,9 +9,9 @@ import java.util.List;
  * Author: Xiangyu Zeng
  * Create Time: 2020-05-06 15:30
  * What I got from this question ?
- * （1）能在list或者stringbuffer后面加入，就在后面加入，最后再reverse都行,
- * 因为insert或者add(0,x)都会让后面的元素逐个向后移，会花费大量时间
- * （2）利用好 除 或者 余数
+ * 1）能在list或stringbuffer后面加入，就在后面加入后再reverse都行,
+ * 因为insert或add(0,x)都会让后面的元素逐个向后移，会花费大量时间?
+ * 2）利用好 或 余数
  **/
 public class AddBinary {
     public String addBinary(String a, String b) {

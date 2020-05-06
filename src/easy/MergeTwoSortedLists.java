@@ -1,3 +1,5 @@
+package easy;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -23,9 +25,9 @@ public class MergeTwoSortedLists {
     public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
         List<ListNode> list = new ArrayList<>();
         while (l1 != null && l2 != null) {
-            //å¦‚æœl1å’Œl2ä¸‹ä¸€ä¸ªéƒ½ä¸ä¸ºç©ºï¼Œåˆ¤æ–­è°æ›´å°
+            //Èç¹ûl1ºÍl2ÏÂÒ»¸ö¶¼²»Îª¿Õ£¬ÅĞ¶ÏË­¸ü??
             if (l1.val < l2.val) {
-                //l1_nextæ›´å°å°±æŠŠl1_nextåŠ å…¥
+                //l1_next¸üĞ¡¾Í°Ñl1_next¼ÓÈë
                 list.add(l1);
                 l1 = l1.next;
             } else {

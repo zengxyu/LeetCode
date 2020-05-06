@@ -1,3 +1,5 @@
+package easy;
+
 /**
  * Program: LeetCode
  * Description: Given a sorted array and a target value,

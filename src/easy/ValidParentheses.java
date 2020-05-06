@@ -1,3 +1,5 @@
+package easy;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Stack;
@@ -7,7 +9,7 @@ public class ValidParentheses {
         int length = s.length();
         List<Character> stack = new ArrayList<>();
         for (int i = 0; i < length; i++) {
-            // 判断第一个和最后一个是否为一对
+            // 判断第一个和�?后一个是否为�?�?
             char item = s.charAt(i);
             if (i == length - 1) {
                 if (stack.size() != 0 && isPair(item, stack.get(stack.size() - 1))) {
@@ -18,13 +20,13 @@ public class ValidParentheses {
                 }
             }
             char next_item = s.charAt(i + 1);
-            //如果i是最后一个元素
+            //如果i是最后一个元�?
 
             if (isPair(item, next_item)) {
-                //如果和下一个是一对，遍历到下下个
+                //如果和下�?个是�?对，遍历到下下个
                 i++;
             } else if (stack.size() != 0 && isPair(item, stack.get(stack.size() - 1))) {
-                //如果和下一个不是一对，和上一个是一对
+                //如果和下�?个不是一对，和上�?个是�?�?
                 stack.remove(stack.size() - 1);
             } else {
                 stack.add(item);

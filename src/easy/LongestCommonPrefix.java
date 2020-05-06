@@ -1,5 +1,4 @@
-import java.util.ArrayList;
-import java.util.List;
+package easy;
 
 /**
  * Write a function to find the longest common prefix string amongst an array of strings.
