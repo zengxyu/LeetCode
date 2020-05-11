@@ -2,7 +2,8 @@ package medium;
 
 /**
  * Program: LeetCode
- * Description: The string "PAYPALISHIRING" is written in a zigzag pattern on a given number of rows like this: (you may want to display this pattern in a fixed font for better legibility)
+ * Description: The string "PAYPALISHIRING" is written in a zigzag pattern on a given number of rows like this:
+ * (you may want to display this pattern in a fixed font for better legibility)
  * Author: Xiangyu Zeng
  * Create Time: 2020-05-07 16:24
  **/
@@ -19,6 +20,8 @@ public class ZigZagConversion {
         int row_index = 0;
         int col_index = 0;
         chars[0][0] = s.charAt(0);
+        //把元素放在应该在的位置
+        // 主要在于元素的索引的值
         for (int i = 1; i < s.length(); i++) {
             int mul = (numRows - 1);
             if ((i - 1) / mul % 2 == 0) {
